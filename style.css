@@ -10,7 +10,12 @@ a {
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
+a:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 5px #ffd700;
+  }
 
 header, footer {
   margin-bottom: 30px;
@@ -42,3 +47,4 @@ html {
   font-style: italic;
   font-size: 0.9em;
 }
+
