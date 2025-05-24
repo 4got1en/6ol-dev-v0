@@ -22,6 +22,8 @@ setTimeout(() => {
     quoteBar.textContent = quotes[currentQuoteIndex];
     quoteBar.classList.remove('fade');
     quoteBar.classList.add('show');
+    quoteBar.textContent = quotes[currentQuoteIndex].text;
+quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
 }, 500); // Matches your fade duration
 
     // Change the quote every 8 seconds
