@@ -15,6 +15,8 @@ function rotateQuotes() {
     // Set the initial quote
     quoteBar.classList.remove('show');
 quoteBar.classList.add('fade');
+quoteBar.textContent = quotes[currentQuoteIndex].text;
+quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
 
 setTimeout(() => {
     quoteBar.textContent = quotes[currentQuoteIndex];
