@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header, footer {
+  margin-bottom: 30px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #ccc;
+  margin-top: 40px;
+}
