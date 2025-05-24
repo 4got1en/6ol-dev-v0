@@ -10,4 +10,10 @@ Created with only HTML during my DBD Founder Mode training.
 - Call-to-action link
 - Footer with contact + GitHub
 
+### Current Features (v0.1)
+- Fully responsive on mobile devices (media queries)
+- Animated quote bar with rotating affirmations (JavaScript)
+- Smooth scroll behavior for anchor links
+- Hover animations for links
+
 This is the seed. It'll grow.
