@@ -16,4 +16,9 @@ Created with only HTML during my DBD Founder Mode training.
 - Smooth scroll behavior for anchor links
 - Hover animations for links
 
+## Current Features (v0.2)
+- JavaScript quote rotator with fade animation
+- Clean section anchor links (mission + CTA)
+- Visual polish via transitions and responsiveness
+
 This is the seed. It'll grow.
