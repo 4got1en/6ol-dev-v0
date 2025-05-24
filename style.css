@@ -48,6 +48,12 @@ html {
   font-size: 0.9em;
 }
 
+.quote-link {
+  color: #999;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 0.9em;
+}
 /* Animation for quote fade */
 .fade {
   opacity: 0;
