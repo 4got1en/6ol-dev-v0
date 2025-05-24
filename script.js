@@ -1,10 +1,10 @@
 // Array of quotes
 const quotes = [
-    "The best way to predict the future is to invent it.",
-    "Life is 10% what happens to us and 90% how we react to it.",
-    "Success is not the key to happiness. Happiness is the key to success.",
-    "The only way to do great work is to love what you do.",
-    "Believe you can and you're halfway there."
+    { text: "The best way to predict the future is to invent it.", id: "dev1" },
+    { text: "Life is 10% what happens to us and 90% how we react to it.", id: "dev2" },
+    { text: "Success is not the key to happiness. Happiness is the key to success.", id: "dev3" },
+    { text: "The only way to do great work is to love what you do.", id: "dev4" },
+    { text: "Believe you can and you're halfway there.", id: "dev5" }
 ];
 
 // Function to rotate quotes
