@@ -13,7 +13,14 @@ function rotateQuotes() {
     let currentQuoteIndex = 0;
 
     // Set the initial quote
+    quoteBar.classList.remove('show');
+quoteBar.classList.add('fade');
+
+setTimeout(() => {
     quoteBar.textContent = quotes[currentQuoteIndex];
+    quoteBar.classList.remove('fade');
+    quoteBar.classList.add('show');
+}, 500); // Matches your fade duration
 
     // Change the quote every 8 seconds
     setInterval(() => {
