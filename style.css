@@ -21,3 +21,13 @@ blockquote {
   color: #ccc;
   margin-top: 40px;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1, h2 {
+    font-size: 1.5em;
+  }
+}
