@@ -36,3 +36,9 @@ html {
   scroll-behavior: smooth;
 }
 
+#quote-bar {
+  margin-top: 20px;
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
