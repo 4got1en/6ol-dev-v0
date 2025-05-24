@@ -15,7 +15,7 @@ function rotateQuotes() {
     // Set the initial quote
     quoteBar.classList.remove('show');
 quoteBar.classList.add('fade');
-quoteBar.textContent = quotes[currentQuoteIndex].text;
+quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
 quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
 
 setTimeout(() => {
