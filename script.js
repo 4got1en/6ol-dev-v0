@@ -22,7 +22,7 @@ setTimeout(() => {
     quoteBar.textContent = quotes[currentQuoteIndex];
     quoteBar.classList.remove('fade');
     quoteBar.classList.add('show');
-    quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
+quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
 quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
 }, 500); // Matches your fade duration
 
