@@ -63,3 +63,20 @@ html {
 .show {
   opacity: 1;
 }
+
+section[id^="dev"] {
+  padding: 80px 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+section[id^="dev"] h3 {
+  color: #ffd700;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+section[id^="dev"] p {
+  color: #ccc;
+  font-size: 0.95em;
+}
