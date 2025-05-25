@@ -14,22 +14,28 @@ function rotateQuotes() {
 
     // Set the initial quote
     quoteBar.classList.remove('show');
-quoteBar.classList.add('fade');
-quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
-quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
+    quoteBar.classList.add('fade');
+    quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
+    quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
 
-setTimeout(() => {
-    quoteBar.textContent = quotes[currentQuoteIndex];
-    quoteBar.classList.remove('fade');
-    quoteBar.classList.add('show');
-quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
-quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
-}, 500); // Matches your fade duration
+    setTimeout(() => {
+        quoteBar.classList.remove('fade');
+        quoteBar.classList.add('show');
+    }, 500); // Matches your fade duration
 
     // Change the quote every 8 seconds
     setInterval(() => {
         currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-        quoteBar.textContent = quotes[currentQuoteIndex];
+
+        quoteBar.classList.remove('show');
+        quoteBar.classList.add('fade');
+        quoteBar.innerHTML = `<a href="#${quotes[currentQuoteIndex].id}" class="quote-link">${quotes[currentQuoteIndex].text}</a>`;
+        quoteBar.setAttribute("data-id", quotes[currentQuoteIndex].id);
+
+        setTimeout(() => {
+            quoteBar.classList.remove('fade');
+            quoteBar.classList.add('show');
+        }, 500);
     }, 8000);
 }
 
